@@ -1,21 +1,19 @@
-import raw from "./tabs/master_of_puppets.txt";
-import { useEffect, useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navigator from "./components/Navigator";
 import Footer from "./components/Footer";
 
+import Home from "./pages/Home";
+import About from "./pages/About";
 function App() {
-  const [tab, setTab] = useState("");
-  useEffect(() => {
-    fetch(raw)
-      .then((r) => r.text())
-      .then((text) => {
-        setTab(text);
-      });
-  }, []);
   return (
     <div>
-      <Navigator />
-      <pre>{tab}</pre>
+      <BrowserRouter>
+        <Navigator />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </BrowserRouter>
       <Footer />
     </div>
   );

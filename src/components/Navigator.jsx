@@ -1,21 +1,39 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Navigator = () => {
   return (
-    <header>
-  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
-      <span class="ml-3 text-xl">Guitar Tabs</span>
-    </a>
-    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-      <a class="mr-5 hover:text-white">First Link</a>
-      <a class="mr-5 hover:text-white">Second Link</a>
-      <a class="mr-5 hover:text-white">Third Link</a>
-      <a class="mr-5 hover:text-white">Fourth Link</a>
-    </nav>
-  </div>
-</header>
-  )
-}
+    <header className="navigator">
+      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <Link
+          to="/"
+          className="flex title-font font-medium items-center text-white mb-4 md:mb-0"
+        >
+          <img
+            className="logo"
+            src="./assets/icons/logo.png"
+            alt="Guitar icon"
+          />
+          <span className="ml-3 text-xl">Guitar Tabs</span>
+        </Link>
+        <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
+          <Link to="/playthrough">
+            <span className="mr-5 hover:text-white">Playthrough</span>
+          </Link>
 
-export default Navigator
+          <Link to="/tabs">
+            <span className="mr-5 hover:text-white">Tabs</span>
+          </Link>
+          <Link to="/progress">
+            <span className="mr-5 hover:text-white">Progress</span>
+          </Link>
+          <Link to="/about">
+            <span className="mr-5 hover:text-white">About</span>
+          </Link>
+        </nav>
+      </div>
+    </header>
+  );
+};
+
+export default Navigator;
