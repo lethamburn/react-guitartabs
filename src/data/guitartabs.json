@@ -1,0 +1,22 @@
+{
+  "tabs": [
+    {
+      "id": 0,
+      "name": "Master of Puppets",
+      "band": "Metallica",
+      "album": "Master of Puppets",
+      "year": 1986,
+      "cover": "https://m.media-amazon.com/images/I/71SziOTzXrL._SL1425_.jpg",
+      "tuning": "E A D G B E"
+    },
+    {
+      "id": 1,
+      "name": "The Trooper",
+      "band": "Iron Maiden",
+      "album": "Piece of Mind",
+      "year": 1983,
+      "cover": "https://m.media-amazon.com/images/I/81bJkvVeOoL._SX522_.jpg",
+      "tuning": "E A D G B E"
+    }
+  ]
+}

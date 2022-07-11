@@ -4,6 +4,8 @@ import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Tabs from "./pages/Tabs";
+import TabDetail from "./pages/TabDetail";
 function App() {
   return (
     <div>
@@ -11,7 +13,9 @@ function App() {
         <Navigator />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/tabs" element={<Tabs />} />
           <Route path="/about" element={<About />} />
+          <Route path="/tabs/:id" element={<TabDetail />} />
         </Routes>
       </BrowserRouter>
       <Footer />
