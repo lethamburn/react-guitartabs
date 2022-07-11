@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import raw from "./tabs/master_of_puppets.txt";
+import { useEffect, useState } from "react";
+import Navigator from "./components/Navigator";
+import Footer from "./components/Footer";
 
 function App() {
+  const [tab, setTab] = useState("");
+  useEffect(() => {
+    fetch(raw)
+      .then((r) => r.text())
+      .then((text) => {
+        setTab(text);
+      });
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navigator />
+      <pre>{tab}</pre>
+      <Footer />
     </div>
   );
 }

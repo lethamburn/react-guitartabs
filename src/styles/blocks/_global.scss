@@ -1,0 +1,14 @@
+html {
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background-color);
+  background-image: url("../../../public/assets/backgrounds/background-main.jpg");
+  color: var(--text-color);
+}
+
+header, footer{
+    backdrop-filter: blur(3px);
+}
