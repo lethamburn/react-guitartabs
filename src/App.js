@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Tabs from "./pages/Tabs";
 import TabDetail from "./pages/TabDetail";
 import Progress from "./pages/Progress";
+import Playthroughs from "./pages/Playthroughs";
 function App() {
   return (
     <div>
@@ -17,6 +18,7 @@ function App() {
           <Route path="/tabs" element={<Tabs />} />
           <Route path="/tabs/:id" element={<TabDetail />} />
           <Route path="/progress" element={<Progress />} />
+          <Route path="/playthroughs" element={<Playthroughs/>} />
           <Route path="/about" element={<About />} />
           
         </Routes>

@@ -8,3 +8,5 @@
 
 @import url("./styles/blocks/_global.scss");
 @import url("./styles/blocks/_navigator.scss");
+@import url("./styles/blocks/_tabs.scss");
+@import url("./styles/blocks/_progress.scss");

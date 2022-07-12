@@ -8,8 +8,15 @@ body {
   background-color: var(--background-color);
   background-image: url("../../../public/assets/backgrounds/background-main.png");
   color: var(--text-color);
+  cursor: url("../../../public/assets/cursor.cur"), auto;
 }
 
 header, footer{
   backdrop-filter: blur(1px);
+}
+
+input{
+  background: rgb(124, 124, 124);
+  color: whitesmoke;
+  padding: 4px;
 }

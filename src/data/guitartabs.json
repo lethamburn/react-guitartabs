@@ -17,6 +17,24 @@
       "year": 1983,
       "cover": "https://m.media-amazon.com/images/I/81bJkvVeOoL._SX522_.jpg",
       "tuning": "E A D G B E"
+    },
+    {
+      "id": 2,
+      "name": "Stairway to Heaven",
+      "band": "Led Zeppelin",
+      "album": "The Song Remains the Same",
+      "year": 1971,
+      "cover": "https://img.sheetmusic.direct/catalogue/product/smd_h_91010364NJq7Dgp0/large.jpg",
+      "tuning": "E A D G B E"
+    },
+    {
+      "id": 3,
+      "name": "Creeping Death",
+      "band": "Metallica",
+      "album": "Ride the Lightning",
+      "year": 1984,
+      "cover": "https://m.media-amazon.com/images/I/61p-utC18PL._SL1045_.jpg",
+      "tuning": "E A D G B E"
     }
   ]
 }
