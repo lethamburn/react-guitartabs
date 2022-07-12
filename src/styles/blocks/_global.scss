@@ -3,7 +3,6 @@ html {
 }
 
 body {
- 
   font-family: "Roboto", sans-serif;
   background-color: var(--background-color);
   background-image: url("../../../public/assets/backgrounds/background-main.png");
@@ -11,16 +10,17 @@ body {
   cursor: url("../../../public/assets/cursor.cur"), auto;
 }
 
-header, footer{
+header,
+footer {
   backdrop-filter: blur(1px);
 }
 
-input{
+input {
   background: rgb(124, 124, 124);
   color: whitesmoke;
   padding: 4px;
 }
 
-section{
+section {
   min-height: 80vh;
 }
